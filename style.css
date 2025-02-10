@@ -1,26 +1,34 @@
-@font-face{
-  font-family: water;
-  src: url("https://cdn.glitch.global/97f7bbb3-2cd9-4b34-bbf2-d0a28c71f10b/Water%20Park.ttf?v=1738683075854");
-}
 
-body {
-  background-color: aliceblue;
+html {
+  background-size: 100px 100px;
+  background-position: 0 0, 25px 25px, 50px 50px;
   text-align: center;
-  color: navy;
+}
+
+/* Background Pattern 
+Taken From https://projects.verou.me/css3patterns/ */
+
+body{
+background-color:silver;
+background-image:
+radial-gradient(circle at 100% 150%, gold 24%, orange 24%, orange 28%, red 28%, darkred 36%, purple 36%, purple 40%, transparent 40%, transparent),
+radial-gradient(circle at 0    150%, gold 24%, orange 24%, orange 28%, red 28%, darkred 36%, purple 36%, purple 40%, transparent 40%, transparent),
+radial-gradient(circle at 50%  100%, white 10%, silver 10%, silver 23%, white 23%, white 30%, silver 30%, silver 43%, white 43%, white 50%, silver 50%, silver 63%, white 63%, white 71%, transparent 71%, transparent),
+radial-gradient(circle at 100% 50%, blue 5%, blue 5%, teal 15%, green 15%, yellowgreen 20%, yellowgreen 20%, gold 29%, gold 29%, orange 34%, red 34%, darkred 44%, darkred 44%, purple 49%, transparent 49%, transparent),
+radial-gradient(circle at 0    50%, blue 5%, blue 5%, teal 15%, green 15%, yellowgreen 20%, yellowgreen 20%, gold 29%, orange 29%, orange 34%, red 34%, darkred 44%, darkred 44%, purple 49%, transparent 49%, transparent);
+background-size: 100px 50px;
+}
+
+h1,
+h2 {
+  background-color: #574914 ;
+  border-radius: 20px;
+  color: white;
+  width: 600px;
   margin: auto;
-  font-family: water;
+  margin-bottom: 5px;
 }
-
-h1{
-  font-size: 30px;
-}
-
 #myCanvas {
-  background-image: url("https://seaviewinfo.com/wp-content/uploads/2018/07/SeaScape.jpg");
-  background-size: 600px 400px;
-  border-radius: 300px;
-  border: 5px solid white;
+  border: 5px solid  #574914;
+  border-radius: 30px;
 }
-
-
-
