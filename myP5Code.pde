@@ -1,16 +1,16 @@
 //🟢Setup Procedure - Runs Once to Set The Canvas
 setup = function(){
   size(800, 600); 
- 
 
 
-
-  
 };
 
 
 var pigMove = 0
-
+var pigMove2 = 0
+var pigMove3 = 0
+var pigMove4 = 0
+var words = 0
 
 
   //🔴🔴drawConveyer Function 
@@ -21,22 +21,58 @@ var pigMove = 0
  fill(130,130,130)
  rect(0, 500, 800,100);
 
+
+
+  drawWords(150+words,150+words);
+  
+  
   drawConveyer(0,0)
 
   drawPig(-50+pigMove,5);
-  drawPig(200+pigMove,5);
-  drawPig(450+pigMove,5);
-  draw2Pig(700+pigMove,5);
+  drawPig(200+pigMove2,5);
+  draw2Pig(450+pigMove3,5);
+  drawPig(700+pigMove4,5);
+  
+ 
 
+
+
+words = words +.5;
+ 
+ if(words > 100){
+     words=1;
+  }
 
 
 pigMove = pigMove + 2;
 
-  if(pigMove > 50){
-   pigMove = -200;
+  if(pigMove > 850){
+   pigMove = -150;
+  }
+
+pigMove2 = pigMove2 + 2;
+
+  if(pigMove2 > 600){
+   pigMove2 = -400;
+  }
+
+
+pigMove3 = pigMove3 + 2;
+
+  if(pigMove3 > 350){
+   pigMove3 = -650;
+  }
+
+
+pigMove4 = pigMove4 + 2;
+
+  if(pigMove4 > 100){
+   pigMove4 = -900;
   }
 
 };
+
+
 
 
 
@@ -46,17 +82,15 @@ pigMove = pigMove + 2;
 var drawConveyer = function(conveyerX, conveyerY){
 
 
-
-
-
-
-
+strokeWeight(3)
   stroke(0,0,0)
   line(150+conveyerX, 500, 150+conveyerY, 600)
   line(300+conveyerX, 500, 300+conveyerY, 600)
   line(450+conveyerX, 500, 450+conveyerY, 600)
   line(600+conveyerX, 500, 600+conveyerY, 600)
   line(750+conveyerX, 500, 750+conveyerY, 600)
+  
+  
 };
   
   
@@ -99,7 +133,7 @@ strokeWeight(2)
   
 var draw2Pig = function(pig2X, pig2Y){
 
-   //fourth pig
+  
   fill(229, 149,  120)
   arc(200+pig2X, 470,50,20,radians(0),radians(190))
   rect(70+pig2X, 325, 20,28)
@@ -113,4 +147,26 @@ var draw2Pig = function(pig2X, pig2Y){
 
 }
  
+ 
+ 
+ //drawWords Function
+ 
+ var drawWords = function(wordsX, wordsY){
+ 
+  
+  strokeWeight(16)
+  stroke(255,255,255)
+  fill(0,0,0,0)
+  line(240, 70, 240, 205+words)
+  ellipse(280,107, 80,80+words)
+  line(350, 70, 350, 140+words)
+  ellipse(420, 107, 80, 80+words)
+  line(460, 70, 460, 170+words)
+  arc(425, 170+words,70,80+words,radians(0),radians(180))
+  arc(530, 95,80,50+words,radians(180),radians(320))
+  arc(530, 90,80,30+words,radians(90),radians(180))
+  arc(530, 120+words,70,30+words,radians(270),radians(360))
+  arc(525, 120+words,80, 60+words,radians(0),radians(150))
+  
+ }
  

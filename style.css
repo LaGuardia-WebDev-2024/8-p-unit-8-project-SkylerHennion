@@ -5,29 +5,30 @@ html {
   text-align: center;
 }
 
-/* Background Pattern 
-Taken From https://projects.verou.me/css3patterns/ */
 
 body{
-background-color:silver;
 background-image:
 radial-gradient(circle at 100% 150%, gold 24%, orange 24%, orange 28%, red 28%, darkred 36%, purple 36%, purple 40%, transparent 40%, transparent),
 radial-gradient(circle at 0    150%, gold 24%, orange 24%, orange 28%, red 28%, darkred 36%, purple 36%, purple 40%, transparent 40%, transparent),
 radial-gradient(circle at 50%  100%, white 10%, silver 10%, silver 23%, white 23%, white 30%, silver 30%, silver 43%, white 43%, white 50%, silver 50%, silver 63%, white 63%, white 71%, transparent 71%, transparent),
-radial-gradient(circle at 100% 50%, blue 5%, blue 5%, teal 15%, green 15%, yellowgreen 20%, yellowgreen 20%, gold 29%, gold 29%, orange 34%, red 34%, darkred 44%, darkred 44%, purple 49%, transparent 49%, transparent),
+radial-gradient(circle at 100% 50%, blue 5%, blue 5%, teal 15%, green 15%, yellowgreen 20%, yellowgreen 20%, gold 29%, orange 29%, orange 34%, red 34%, darkred 44%, darkred 44%, purple 49%, transparent 49%, transparent),
 radial-gradient(circle at 0    50%, blue 5%, blue 5%, teal 15%, green 15%, yellowgreen 20%, yellowgreen 20%, gold 29%, orange 29%, orange 34%, red 34%, darkred 44%, darkred 44%, purple 49%, transparent 49%, transparent);
 background-size: 100px 50px;
 }
 
+
+
 h1,
 h2 {
-  background-color: #574914 ;
+  background-color: hotpink ;
   border-radius: 20px;
-  color: white;
+  color: black;
   width: 600px;
   margin: auto;
   margin-bottom: 5px;
 }
+
+
 #myCanvas {
   border: 5px solid  #574914;
   border-radius: 30px;
