@@ -9,10 +9,31 @@ html {
 body{
 background-image:
 radial-gradient(circle at 100% 150%, gold 24%, orange 24%, orange 28%, red 28%, darkred 36%, purple 36%, purple 40%, transparent 40%, transparent),
+  
 radial-gradient(circle at 0    150%, gold 24%, orange 24%, orange 28%, red 28%, darkred 36%, purple 36%, purple 40%, transparent 40%, transparent),
+  
 radial-gradient(circle at 50%  100%, white 10%, silver 10%, silver 23%, white 23%, white 30%, silver 30%, silver 43%, white 43%, white 50%, silver 50%, silver 63%, white 63%, white 71%, transparent 71%, transparent),
+  
 radial-gradient(circle at 100% 50%, blue 5%, blue 5%, teal 15%, green 15%, yellowgreen 20%, yellowgreen 20%, gold 29%, orange 29%, orange 34%, red 34%, darkred 44%, darkred 44%, purple 49%, transparent 49%, transparent),
+  
 radial-gradient(circle at 0    50%, blue 5%, blue 5%, teal 15%, green 15%, yellowgreen 20%, yellowgreen 20%, gold 29%, orange 29%, orange 34%, red 34%, darkred 44%, darkred 44%, purple 49%, transparent 49%, transparent);
+background-size: 100px 50px;
+}
+
+
+
+
+body:hover{
+background-image:
+radial-gradient(circle at 100% 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+
+radial-gradient(circle at 0    150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+  
+radial-gradient(circle at 50%  100%, blue 10%, blue 10%, teal 23%, green 23%, yellowgreen 30%, yellowgreen 30%, gold 43%, orange 43%, orange 50%, red 50%, darkred 63%, darkred 63%, purple 71%, transparent 71%, transparent),
+  
+radial-gradient(circle at 100% 50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent),
+  
+radial-gradient(circle at 0    50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent);
 background-size: 100px 50px;
 }
 
@@ -30,6 +51,6 @@ h2 {
 
 
 #myCanvas {
-  border: 5px solid  #574914;
+  border: 5px solid  magenta;
   border-radius: 30px;
 }

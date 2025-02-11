@@ -11,6 +11,7 @@ var pigMove2 = 0
 var pigMove3 = 0
 var pigMove4 = 0
 var words = 0
+var conveyerMove = 0
 
 
   //🔴🔴drawConveyer Function 
@@ -26,14 +27,25 @@ var words = 0
   drawWords(150+words,150+words);
   
   
-  drawConveyer(0,0)
-
+  drawConveyer(conveyerMove,0)
+  drawConveyer(conveyerMove-150,0)
+  
+  
+ 
   drawPig(-50+pigMove,5);
   drawPig(200+pigMove2,5);
   draw2Pig(450+pigMove3,5);
   drawPig(700+pigMove4,5);
   
  
+
+conveyerMove = conveyerMove + 2
+
+ 
+ if(conveyerMove > 150){
+     conveyerMove=-150;
+  }
+
 
 
 
@@ -84,11 +96,11 @@ var drawConveyer = function(conveyerX, conveyerY){
 
 strokeWeight(3)
   stroke(0,0,0)
-  line(150+conveyerX, 500, 150+conveyerY, 600)
-  line(300+conveyerX, 500, 300+conveyerY, 600)
-  line(450+conveyerX, 500, 450+conveyerY, 600)
-  line(600+conveyerX, 500, 600+conveyerY, 600)
-  line(750+conveyerX, 500, 750+conveyerY, 600)
+  line(150+conveyerX, 500, 150+conveyerX, 600)
+  line(300+conveyerX, 500, 300+conveyerX, 600)
+  line(450+conveyerX, 500, 450+conveyerX, 600)
+  line(600+conveyerX, 500, 600+conveyerX, 600)
+  line(750+conveyerX, 500, 750+conveyerX, 600)
   
   
 };
@@ -96,9 +108,11 @@ strokeWeight(3)
   
   
   
+  
+  
   //🟢drawPig Function 
   
-var drawPig = function(pigX, pigY){
+var drawPig = function(pigX, pigY, pigColor){
   
 strokeWeight(2)
   
@@ -114,19 +128,17 @@ strokeWeight(2)
   rect(90+pigX, 400+pigY,20,60)
   ellipse(130+pigX, 340+pigY, 60, 30)
   fill(0,0,0)
+  
   ellipse(140+pigX, 340+pigY, 5,10)
   ellipse(120+pigX, 340+pigY, 5,10)
   ellipse(110+pigX, 320+pigY, 10,10)
   ellipse(150+pigX, 320+pigY, 10,10)
   
   
-  
-  
-
-  
-  
- 
  }
+ 
+ 
+ 
  
  
  //🟢draw2Pig Function 
@@ -134,7 +146,8 @@ strokeWeight(2)
 var draw2Pig = function(pig2X, pig2Y){
 
   
-  fill(229, 149,  120)
+  fill(random(50,255),random(50,255),random(50,255))
+  //fill(229, 149,  120)
   arc(200+pig2X, 470,50,20,radians(0),radians(190))
   rect(70+pig2X, 325, 20,28)
   ellipse(130+pig2X, 430, 120,150)
@@ -146,6 +159,10 @@ var draw2Pig = function(pig2X, pig2Y){
   ellipse(100+pig2X, 320, 10,10)
 
 }
+ 
+ 
+ 
+ 
  
  
  
